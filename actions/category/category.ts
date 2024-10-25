@@ -43,7 +43,7 @@ async function initializeCategories() {
       mockCategories = categories.map((cat, index) => ({
         id: `cat-${index + 1}`,
         name: cat.charAt(0).toUpperCase() + cat.slice(1),
-        url: `/category/${cat.toLowerCase().replace(/\s+/g, '-')}`,
+        url: `/${cat.toLowerCase().replace(/\s+/g, '-')}`,
         parentID: null,
         iconUrl: null,
         iconSize: [18, 18]

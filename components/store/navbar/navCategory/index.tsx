@@ -45,7 +45,7 @@ const NavBarCategory = ({ isNavbarVisible: isNavbarHide }: IProps) => {
         className={`${styles.menu} ${isActive && styles.showMenu}`}
       >
         {categories.map((item, index) => (
-          <Link key={index} href={"/list/" + item.group.url}>
+          <Link key={index} href={"/list" + item.group.url}>
             {item.group.name}
           </Link>
         ))}

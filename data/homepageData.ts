@@ -156,7 +156,7 @@ export const SlidesData: TSlide[] = [
 export const BlogCardData: TBlogCard[] = [
   {
     title: "Latest Fashion Trends",
-    imgUrl: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    imgUrl: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
     url: "#",
     shortText: "Discover the latest trends in men's and women's fashion. From casual wear to elegant designs, we've got you covered."
   },

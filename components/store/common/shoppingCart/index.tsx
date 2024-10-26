@@ -111,7 +111,7 @@ const ShoppingCart = ({ isVisible, handleOnClose }: ShoppingCartProps) => {
               ))}
               <div className={styles.cartSummary}>
                 <div className={styles.subtotal}>
-                  <span>Subtotal</span>
+                  <span>Subtotal </span>
                   <span>{formatPrice(calculateTotal())}</span>
                 </div>
               </div>

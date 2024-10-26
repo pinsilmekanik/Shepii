@@ -44,21 +44,21 @@ const ProductCard = ({
             </div>
           )}
           <Image
-              src={imageUrl[0]}
-              alt="Product image - 1"
-              fill
-              sizes="(max-width: 220px) 100vw"
-              quality={75}
-              priority
-            />
-            <Image
-              src={imageUrl[0]}
-              alt="Product image - 2"
-              fill
-              sizes="(max-width: 220px) 100vw"
-              quality={75}
-              priority
-            />
+            src={imageUrl[0]}
+            alt="Product image - 1"
+            width={240}
+            height={240}
+            quality={75}
+            priority
+          />
+          <Image
+            src={imageUrl[0]}
+            alt="Product image - 2"
+            width={240}
+            height={240}
+            quality={75}
+            priority
+          />
         </Link>
         <Link
           href={url}

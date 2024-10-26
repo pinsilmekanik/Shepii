@@ -1,7 +1,7 @@
 @import "/public/css/variables.module.scss";
 
 .staticWidth {
-  min-width: 240px !important;
+  min-width: 240px;
 }
 
 .productCard {
@@ -10,6 +10,8 @@
   padding: 8px;
   transition: all .5s;
   position: relative;
+  width: 256px;
+  min-width: 256px;
 
   > .outOfStock {
     display: flex;

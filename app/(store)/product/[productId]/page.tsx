@@ -128,7 +128,7 @@ const ProductPage = () => {
                     rate: parseFloat(productInfo.specifications[0].specs[1].value),
                     count: parseInt(productInfo.specifications[0].specs[2].value)
                   },
-                  image: productInfo.images[0] 
+                  image: productInfo.images[0]
                 }}
               />
             ) : (
@@ -245,7 +245,6 @@ const ProductPage = () => {
                   rating={product.rating}
                   specs={[product.category]}
                   url={`/product/${product.id}`}
-                  staticWidth
                 />
               ))}
             </div>

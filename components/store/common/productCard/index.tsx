@@ -28,15 +28,15 @@ const ProductCard = ({
   url,
   isAvailable = true,
   rating,
-  staticWidth,
+  staticWidth = false,
 }: TProductCard) => {
   return (
     <div 
-      className={`${styles.productCard} ${staticWidth ? styles.staticWidth : ''}`}
+      className={`${styles.productCard}`}
     >
         <Link
           href={url}
-          className={`${styles.imageWrapper} ${staticWidth ? styles.staticWidth : ''}`}
+          className={`${styles.imageWrapper}`}
         >
           {!isAvailable && (
             <div className={styles.outOfStock}>
@@ -47,8 +47,7 @@ const ProductCard = ({
               src={imageUrl[0]}
               alt="Product image - 1"
               fill
-              sizes="(max-width: 240px) 100vw"
-              className="object-cover w-full h-full"
+              sizes="(max-width: 220px) 100vw"
               quality={75}
               priority
             />
@@ -56,8 +55,7 @@ const ProductCard = ({
               src={imageUrl[0]}
               alt="Product image - 2"
               fill
-              sizes="(max-width: 240px) 100vw"
-              className="object-cover w-full h-full"
+              sizes="(max-width: 220px) 100vw"
               quality={75}
               priority
             />
